@@ -1,0 +1,73 @@
+{
+  "skill_name": "yescan-ocr-universal",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我想测试一下 API Key 未配置时的行为。请按以下步骤操作：\n1. 如果 ~/.yescan_env 文件存在，先备份它：mv ~/.yescan_env ~/.yescan_env.bak\n2. 删除 ~/.yescan_env 文件：rm -f ~/.yescan_env\n3. 在执行命令时，显式设置 SCAN_WEBSERVICE_KEY 为空字符串，确保环境变量被清空：SCAN_WEBSERVICE_KEY=\"\" python3 scripts/scan.py --scene general-ocr --url https://img.alicdn.com/imgextra/i2/O1CN01rZbIcC1LbgwwJtxdo_!!6000000001318-0-tps-1016-1308.jpg\n4. 测试完成后，如果之前有备份文件，恢复它：mv ~/.yescan_env.bak ~/.yescan_env",
+      "expected_output": "命令返回 A0100 错误（API Key 未配置），Agent 应以 Markdown 格式友好展示错误信息",
+      "expectations": [
+        "Agent 在执行 OCR 命令前清除了 ~/.yescan_env 文件（或确认其不存在）",
+        "命令执行时显式设置 SCAN_WEBSERVICE_KEY 为空字符串（命令前有 SCAN_WEBSERVICE_KEY=\"\" 前缀）",
+        "命令返回了 code 为 A0100 的错误",
+        "Agent 识别到 A0100 错误后，使用 Markdown 格式展示错误信息",
+        "未原样透出 JSON，而是转换为友好的 Markdown 格式",
+        "测试完成后恢复了 ~/.yescan_env 文件（如果之前存在）"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我把这张图片里的文字都提取出来，结果原样透出。图片文件链接是 https://img.alicdn.com/imgextra/i2/O1CN01rZbIcC1LbgwwJtxdo_!!6000000001318-0-tps-1016-1308.jpg",
+      "expected_output": "调用 general-ocr 场景识别图片中的文字，返回 JSON 格式的识别结果",
+      "expectations": [
+        "使用了 general-ocr 场景",
+        "执行了 python3 scripts/scan.py 命令",
+        "命令中包含 --scene general-ocr 参数",
+        "返回了 JSON 格式的识别结果，code 为 00000"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "帮我识别这张表格图片里的数据。图片文件链接是 /https://img.alicdn.com/imgextra/i3/O1CN01VXUH7V1WiWdODGhuE_!!6000000002822-0-tps-861-533.jpg",
+      "expected_output": "调用 table-ocr 场景识别表格图片，返回 JSON 格式的表格结构化数据",
+      "expectations": [
+        "使用了 table-ocr 场景",
+        "执行了 python3 scripts/scan.py 命令",
+        "命令中包含 --scene table-ocr 参数",
+        "返回了 JSON 格式的识别结果，code 为 00000"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "这张图片里有数学公式，帮我识别出来。图片文件链接是 https://img.alicdn.com/imgextra/i3/O1CN01jVyzIu1GVffIAJWBQ_!!6000000000628-0-tps-1320-1682.jpg",
+      "expected_output": "调用 formula-ocr 场景识别公式图片，返回 JSON 格式的识别结果",
+      "expectations": [
+        "使用了 formula-ocr 场景",
+        "执行了 python3 scripts/scan.py 命令",
+        "命令中包含 --scene formula-ocr 参数",
+        "返回了 JSON 格式的识别结果，code 为 00000"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "这张发票图片，帮我用增值税发票能力识别出来。图片文件链接是 https://img.alicdn.com/imgextra/i1/O1CN01luVMAz1sB1Csy2Q7D_!!6000000005727-0-tps-1070-720.jpg",
+      "expected_output": "调用 vat-invoice-ocr 场景识别图片，返回 JSON 格式的识别结果",
+      "expectations": [
+        "使用了 vat-invoice-ocr 场景",
+        "执行了 python3 scripts/scan.py 命令",
+        "命令中包含 --scene vat-invoice-ocr 参数",
+        "返回了 JSON 格式的识别结果，code 为 00000"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "这张手写的图片，帮我手写能力识别出来。图片文件链接是 https://img.alicdn.com/imgextra/i2/O1CN01lhtpBG1y3aTTBkpGl_!!6000000006523-0-tps-1310-1718.jpg",
+      "expected_output": "调用 handwritten-ocr 场景识别图片，返回 JSON 格式的识别结果",
+      "expectations": [
+        "使用了 handwritten-ocr 场景",
+        "执行了 python3 scripts/scan.py 命令",
+        "命令中包含 --scene handwritten-ocr 参数",
+        "返回了 JSON 格式的识别结果，code 为 00000"
+      ]
+    }
+  ]
+}
