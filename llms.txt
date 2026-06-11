@@ -1,0 +1,40 @@
+# yescan-ocr-qoder
+
+> A universal OCR Agent Skill powered by Yescan. Recognizes text, tables, formulas, ID cards, invoices, medical reports, and more from images — 17 scene types in total. Runs inside QoderWork as an installable Agent Skill.
+
+yescan-ocr-qoder is an open-source Agent Skill for [QoderWork](https://qoder.com), the desktop AI assistant by Qoder. It wraps the Yescan OCR API to extract, recognize, and structure text from images, screenshots, photos, and scanned documents. The skill supports 17 distinct scenes, matched automatically by the agent based on user intent.
+
+## Supported Scenes
+
+- [Handwritten OCR](https://github.com/yescan-ai/yescan-ocr-qoder): handwriting, cursive, handwritten essays
+- [Table OCR](https://github.com/yescan-ai/yescan-ocr-qoder): tables, Excel, reports, receipts
+- [ID Card OCR](https://github.com/yescan-ai/yescan-ocr-qoder): national ID card
+- [Social Security Card OCR](https://github.com/yescan-ai/yescan-ocr-qoder): social security, medical insurance card
+- [Travel Permit OCR](https://github.com/yescan-ai/yescan-ocr-qoder): HK/Macau/TW travel permit
+- [Degree Certificate OCR](https://github.com/yescan-ai/yescan-ocr-qoder): degree, diploma, academic certificate
+- [VAT Invoice OCR](https://github.com/yescan-ai/yescan-ocr-qoder): VAT invoice, tax invoice
+- [Train Ticket OCR](https://github.com/yescan-ai/yescan-ocr-qoder): train ticket, railway ticket
+- [Formula OCR](https://github.com/yescan-ai/yescan-ocr-qoder): math formula, LaTeX, chemical equation
+- [Question OCR](https://github.com/yescan-ai/yescan-ocr-qoder): exam question, exercise, problem set
+- [Driver's License OCR](https://github.com/yescan-ai/yescan-ocr-qoder): driver's license
+- [Vehicle License OCR](https://github.com/yescan-ai/yescan-ocr-qoder): vehicle registration, license plate
+- [Commercial Invoice OCR](https://github.com/yescan-ai/yescan-ocr-qoder): commercial invoice, English invoice
+- [Medical Report OCR](https://github.com/yescan-ai/yescan-ocr-qoder): lab report, health checkup, medical report
+- [Business License OCR](https://github.com/yescan-ai/yescan-ocr-qoder): business license, registration certificate
+- [Product Image OCR](https://github.com/yescan-ai/yescan-ocr-qoder): product, packaging, label
+- [General Text Extraction](https://github.com/yescan-ai/yescan-ocr-qoder): extract text, recognize text (fallback)
+
+## Docs
+
+- [README (bilingual: Chinese / English)](https://github.com/yescan-ai/yescan-ocr-qoder/blob/main/README.md): installation, usage, CLI interface, constraints
+- [SKILL.md](https://github.com/yescan-ai/yescan-ocr-qoder/blob/main/SKILL.md): agent-facing skill definition with intent matching rules
+- [Scenario Details](https://github.com/yescan-ai/yescan-ocr-qoder/blob/main/references/scenarios-detail.md): in-depth description for each scene
+- [Error Codes](https://github.com/yescan-ai/yescan-ocr-qoder/blob/main/references/error-codes.md): error code reference and retry strategy
+- [Resources](https://github.com/yescan-ai/yescan-ocr-qoder/blob/main/references/resources.md): official links, API key retrieval, data flow
+
+## Optional
+
+- [Yescan Open Platform](https://scan.quark.cn/business): apply for API Key, API documentation
+- [ClawHub Skill Page](https://clawhub.ai/mozhihuidage/yescan-ocr-universal): install, downloads, ratings
+- [QoderWork](https://qoder.com): agent runtime environment
+- [yescan-ai GitHub Org](https://github.com/yescan-ai): more skills in the yescan family
