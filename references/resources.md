@@ -12,7 +12,7 @@
 1. 访问 https://scan.quark.cn/business
 2. 进入开发者后台
 3. 登录/注册账号
-4. 查看 API Key
+4. 查看 API Key(AI Agent接入所对应的 API Key)
 
 > ⚠️ **注意**：若链接跳转至其他域名，说明已失效 —— 请直接在浏览器地址栏手动输入 `https://scan.quark.cn/business`（这是当前唯一有效的官方入口）。
 
