@@ -1,12 +1,6 @@
-<div align="right">
 
-[English](#english) | **[中文](#中文)**
 
-</div>
-
----
-
-# yescan-ocr-qoder
+# alibaba-quark-ocr-qoder
 
 [![ClawHub Downloads](https://img.shields.io/badge/ClawHub-1.9k%20downloads-blue?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01IDEuNDEtMS40MUwxMCAxNC4xN2w3LjU5LTcuNTlMMTkgOGwtOSA5eiIvPjwvc3ZnPg==)](https://clawhub.ai/mozhihuidage/yescan-ocr-universal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
