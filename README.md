@@ -134,7 +134,7 @@ yescan-ocr-qoder/
 - [夸克扫描王开放平台](https://scan.quark.cn/business) — 密钥申请、API 文档
 - [ClawHub 技能页](https://clawhub.ai/mozhihuidage/yescan-ocr-universal) — 安装、下载量、评分
 - [QoderWork](https://qoder.com) — Agent 运行环境
-- [yescan-ai GitHub Org](https://github.com/yescan-ai) — 更多技能
+- [alibaba-quark-scanking GitHub Org](https://github.com/alibaba-quark-scanking) — 更多技能
 
 ## 许可证
 
@@ -278,7 +278,7 @@ yescan-ocr-qoder/
 - [Quark Scan King Open Platform](https://scan.quark.cn/business) — API key & documentation
 - [ClawHub Skill Page](https://clawhub.ai/mozhihuidage/yescan-ocr-universal) — Install, downloads & ratings
 - [QoderWork](https://qoder.com) — Agent runtime environment
-- [yescan-ai GitHub Org](https://github.com/yescan-ai) — More skills
+- [alibaba-quark-scanking GitHub Org](https://github.com/alibaba-quark-scanking) — More skills
 
 ## License
 
